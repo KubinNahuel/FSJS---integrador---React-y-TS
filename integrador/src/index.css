@@ -1,0 +1,136 @@
+body {
+  background-color: #ebebeb !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.tituloP {
+  margin-top: 10px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #666;
+}
+
+.Carrusel {
+  max-height: 520px !important;
+}
+
+.imagenCar {
+  width: 1280px;
+  height: 720px;
+}
+
+.colorNav {
+  background-color: yellow;
+}
+
+.sNav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: rgb(223, 223, 7);
+  padding: 5px;
+}
+
+.card-group {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  gap: 40px;
+  justify-content: center;
+}
+.card-group .card-body {
+  background-color: white;
+  width: 300px !important;
+  overflow: hidden;
+  height: max-content;
+  box-shadow: 2px 3px 8px;
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.card-group .card-body .imagen-card {
+  height: 200px;
+  max-width: 500px !important;
+  text-align: center !important;
+  box-shadow: 1px 1px 2px;
+}
+.card-group .card-body .comprar {
+  width: 100%;
+  border: none;
+  background-color: rgb(7, 197, 7);
+  color: aliceblue;
+  padding: 5px;
+  bottom: 0;
+  position: relative;
+}
+.card-group .card-body:hover {
+  transition: width 0.5s;
+  font-size: 20px !important;
+  width: 385px !important;
+}
+
+.main-footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: #313131;
+  padding-top: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.flexB {
+  justify-content: center;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.cardVenderContainer {
+  display: flex;
+  justify-content: center;
+}
+.cardVenderContainer .cardVender {
+  width: 300px;
+  height: 310px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 8px black;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.cardVenderContainer .cardVender .cardVenderBody {
+  width: 260px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.cardVenderContainer .cardVender .cardVenderBody .cardVenderImagen {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px black;
+  margin-bottom: 10px;
+  width: 260px;
+}
+
+/*# sourceMappingURL=index.css.map */
