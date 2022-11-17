@@ -5,7 +5,7 @@ export const Stock = [
     imagen:"https://phantom-telva.unidadeditorial.es/675509dc455dcd1eeb99dd1941019c2d/resize/828/f/jpg/assets/multimedia/imagenes/2021/04/19/16188250790963.jpg",
     marca: "Balenciaga",
     descripcion: "Remera Balenciaga",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const Stock = [
     imagen: "https://www.clarin.com/img/2017/04/27/r1sXKOkx-_340x340.jpg",
     marca: "Gucci",
     descripcion: "Remera Gucci",
-    precio: 4,
+    price: 4,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const Stock = [
     imagen:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/168/383/products/21108009-j-611-830d650875dbe1fa6016009578947599-640-0.jpg",
     marca: "Element",
     descripcion: "Remera Element",
-    precio: 7,
+    price: 7,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const Stock = [
     imagen:"https://sevensport.vteximg.com.br/arquivos/ids/402823-500-500/DC7817-010_1.jpg?v=637638627840730000",
     marca: "Nike",
     descripcion: "Remera Nike",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const Stock = [
     imagen:"https://sevensport.vteximg.com.br/arquivos/ids/427246-500-500/GN2428_1.jpg?v=637687194386300000",
     marca: "Adidas",
     descripcion: "Remera Adidas",
-    precio: 15.9,
+    price: 15.9,
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const Stock = [
     imagen:"https://phantom-telva.unidadeditorial.es/675509dc455dcd1eeb99dd1941019c2d/resize/828/f/jpg/assets/multimedia/imagenes/2021/04/19/16188250790963.jpg",
     marca: "Balenciaga",
     descripcion: "Remera Balenciaga",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const Stock = [
     imagen: "https://www.clarin.com/img/2017/04/27/r1sXKOkx-_340x340.jpg",
     marca: "Gucci",
     descripcion: "Remera Gucci",
-    precio: 30.9,
+    price: 30.9,
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const Stock = [
     imagen:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/168/383/products/21108009-j-611-830d650875dbe1fa6016009578947599-640-0.jpg",
     marca: "Element",
     descripcion: "Remera Element",
-    precio: 10.9,
+    price: 10.9,
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ export const Stock = [
     imagen:"https://sevensport.vteximg.com.br/arquivos/ids/402823-500-500/DC7817-010_1.jpg?v=637638627840730000",
     marca: "Nike",
     descripcion: "Remera Nike",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 10,
@@ -78,7 +78,7 @@ export const Stock = [
       "https://sevensport.vteximg.com.br/arquivos/ids/427246-500-500/GN2428_1.jpg?v=637687194386300000",
     marca: "Adidas",
     descripcion: "Remera Adidas",
-    precio: 8,
+    price: 8,
   },
   {
     id: 11,
@@ -87,7 +87,7 @@ export const Stock = [
       "https://http2.mlstatic.com/D_NQ_NP_855879-MLA48243836339_112021-W.jpg",
     marca: "Balenciaga",
     descripcion: "Botas Balenciaga",
-    precio: 40.9,
+    price: 40.9,
   },
   {
     id: 12,
@@ -96,7 +96,7 @@ export const Stock = [
       "https://cdn-images.farfetch-contents.com/17/08/66/88/17086688_34208202_300.jpg",
     marca: "Gucci",
     descripcion: "Botas Gucci",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 13,
@@ -104,7 +104,7 @@ export const Stock = [
     imagen: "https://www.neo2.com/wp-content/uploads/1-element-boots-botas.jpg",
     marca: "Element",
     descripcion: "Botas Element",
-    precio: 15.9,
+    price: 15.9,
   },
   {
     id: 14,
@@ -112,7 +112,7 @@ export const Stock = [
     imagen:"https://celadasa.vtexassets.com/arquivos/ids/212064-500-auto?v=637927339276800000&width=500&height=auto&aspect=true",
     marca: "Nike",
     descripcion: "Botas Nike",
-    precio: 5,
+    price: 5,
   },
   {
     id: 15,
@@ -120,7 +120,7 @@ export const Stock = [
     imagen:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1e44e236aa3c439cb280ac5400cbbad7_9366/Zapatillas_Hoops_2.0_Mid_Blanco_FY8616_01_standard.jpg",
     marca: "Adidas",
     descripcion: "Botas Adidas",
-    precio: 8,
+    price: 8,
   },
   {
     id: 16,
@@ -128,7 +128,7 @@ export const Stock = [
     imagen: "https://http2.mlstatic.com/D_NQ_NP_855879-MLA48243836339_112021-W.jpg",
     marca: "Balenciaga",
     descripcion: "Botas Balenciaga",
-    precio: 40.9,
+    price: 40.9,
   },
   {
     id: 17,
@@ -136,7 +136,7 @@ export const Stock = [
     imagen:"https://cdn-images.farfetch-contents.com/17/08/66/88/17086688_34208202_300.jpg",
     marca: "Gucci",
     descripcion: "Botas Gucci",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 18,
@@ -144,7 +144,7 @@ export const Stock = [
     imagen: "https://www.neo2.com/wp-content/uploads/1-element-boots-botas.jpg",
     marca: "Element",
     descripcion: "Botas Element",
-    precio: 15.9,
+    price: 15.9,
   },
   {
     id: 19,
@@ -152,7 +152,7 @@ export const Stock = [
     imagen:"https://celadasa.vtexassets.com/arquivos/ids/212064-500-auto?v=637927339276800000&width=500&height=auto&aspect=true",
     marca: "Nike",
     descripcion: "Botas Nike",
-    precio: 2,
+    price: 2,
   },
   {
     id: 20,
@@ -160,7 +160,7 @@ export const Stock = [
     imagen:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1e44e236aa3c439cb280ac5400cbbad7_9366/Zapatillas_Hoops_2.0_Mid_Blanco_FY8616_01_standard.jpg",
     marca: "Adidas",
     descripcion: "Botas Adidas",
-    precio: 12.9,
+    price: 12.9,
   },
   {
     id: 21,
@@ -168,7 +168,7 @@ export const Stock = [
     imagen:"https://cdn-images.farfetch-contents.com/17/33/58/66/17335866_37086539_300.jpg",
     marca: "Balenciaga",
     descripcion: "Pantalones Balenciaga",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 22,
@@ -176,7 +176,7 @@ export const Stock = [
     imagen:"https://media.gucci.com/style/DarkGray_South_0_160_540x540/1595607303/623953_XDBEU_4009_001_100_0000_Light-Pantaln-denim-orgnico-decolorado-ecolgico.jpg",
     marca: "Gucci",
     descripcion: "Pantalones Gucci",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 23,
@@ -184,7 +184,7 @@ export const Stock = [
     imagen:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/168/383/products/211283066-11-17770e986161c26dd316624876217396-640-0.jpg",
     marca: "Elements",
     descripcion: "Pantalones Elements",
-    precio: 7,
+    price: 7,
   },
   {
     id: 24,
@@ -192,7 +192,7 @@ export const Stock = [
     imagen:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1b29590e-4137-470e-88a8-435b204c84ee/sportswear-tech-fleece-jogger-vSBPT5.png",
     marca: "Nike",
     descripcion: "Pantalones Nike",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 25,
@@ -200,7 +200,7 @@ export const Stock = [
     imagen:"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/59932c0575ea4d92a7d6ada900bda2a8_9366/pantalon-tiro-essential.jpg",
     marca: "Adidas",
     descripcion: "Pantalones Adidas",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 26,
@@ -208,7 +208,7 @@ export const Stock = [
     imagen:"https://cdn-images.farfetch-contents.com/17/33/58/66/17335866_37086539_300.jpg",
     marca: "Balenciaga",
     descripcion: "Pantalones Balenciaga",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 27,
@@ -216,7 +216,7 @@ export const Stock = [
     imagen:"https://media.gucci.com/style/DarkGray_South_0_160_540x540/1595607303/623953_XDBEU_4009_001_100_0000_Light-Pantaln-denim-orgnico-decolorado-ecolgico.jpg",
     marca: "Gucci",
     descripcion: "Pantalones Gucci",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 28,
@@ -224,7 +224,7 @@ export const Stock = [
     imagen:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/168/383/products/211283066-11-17770e986161c26dd316624876217396-640-0.jpg",
     marca: "Elements",
     descripcion: "Pantalones Elements",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 29,
@@ -232,7 +232,7 @@ export const Stock = [
     imagen: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1b29590e-4137-470e-88a8-435b204c84ee/sportswear-tech-fleece-jogger-vSBPT5.png",
     marca: "Nike",
     descripcion: "Pantalones Nike",
-    precio: 19.9,
+    price: 19.9,
   },
   {
     id: 30,
@@ -240,7 +240,7 @@ export const Stock = [
     imagen:"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/59932c0575ea4d92a7d6ada900bda2a8_9366/pantalon-tiro-essential.jpg",
     marca: "Adidas",
     descripcion: "Pantalones Adidas",
-    precio: 19.9,
+    price: 19.9,
   },
 ];
 

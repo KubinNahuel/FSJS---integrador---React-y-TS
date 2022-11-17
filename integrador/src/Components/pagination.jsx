@@ -1,16 +1,17 @@
-import Pagination from 'react-bootstrap/Pagination';
+import Pagination from "react-bootstrap/Pagination";
+import { Link } from "react-router-dom";
 
 function AdvancedExample(props) {
-  function cambiarTipo2(e){
-    props.setCategoria2(e.target.textContent);
-   }
   return (
-    <Pagination className='flexB'>
+    <Pagination className="flexB">
       <Pagination.First />
       <Pagination.Prev />
-      
-      <Pagination.Item onClick={cambiarTipo2}>{1}</Pagination.Item>
-      <Pagination.Item onClick={cambiarTipo2}>{2}</Pagination.Item>
+      <Link to="/">
+        <Pagination.Item href="/">{1}</Pagination.Item>
+      </Link>
+      <Link to="/Resumen">
+        <Pagination.Item href="/">{2}</Pagination.Item>
+      </Link>
       <Pagination.Next />
       <Pagination.Last />
     </Pagination>

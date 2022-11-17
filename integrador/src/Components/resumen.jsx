@@ -1,30 +1,25 @@
 import React from "react";
 import { Stock } from "../data/data";
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
+import AdvancedExample from "./pagination";
+import { GenerarCard } from "./card";
 
-export function Resumen(){
-    return(
-        <>
-         <div className='tituloP'>
+
+export function Resumen() {
+  return (
+    <>
+      <div className="tituloP">
         <h1>Todos los productos</h1>
-        </div>
-        <CardGroup className='card-container'>
-            {Stock.map((element, index)=>{
-                 return(
-                    <Card.Body key={index}>
-                        <Card.Img className='imagen-card'  src={element.imagen} />
-                          <Card.Title>{element.marca}</Card.Title>
-                          <Card.Text>{element.descripcion}</Card.Text>
-                          <small className="text-muted">${element.precio}</small>
-                          <Card.Footer>
-                          <button type='button' className='comprar'>Comprar</button>
-                        </Card.Footer>
-                        </Card.Body>
-        )
-            })}
-        </CardGroup>
-
-        </>
-    )
+      </div>
+      <CardGroup className="card-container">
+        {Stock.map((item, index) => {
+          return (
+            <GenerarCard index={index} imagen={item.imagen} marca={item.marca} descripcion={item.descripcion} item={item} price={item.price}></GenerarCard>
+          );
+        })}
+      </CardGroup>
+      <AdvancedExample />
+    </>
+  );
 }

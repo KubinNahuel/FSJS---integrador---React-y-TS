@@ -3,33 +3,27 @@ import { Stock } from "../data/data";
 import NavScrollExample from "./navBar";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import { GenerarCard } from "./card";
+import { useParams } from "react-router-dom";
 
 
-// export function ResB(){
-//     const [busqueda, setBusqueda] = useState("")
-//     Stock.map((element)=>{
-//         if(element.tipo.toLowerCase==busqueda.toLowerCase || element.marca.toLowerCase==busqueda.toLowerCase){
-//           return(
-//             <CardGroup className='card-container'>
-//                             <Card.Body >
-//                                 <Card.Img className='imagen-card'  src={element.imagen} />
-//                                   <Card.Title>{element.marca}</Card.Title>
-//                                   <Card.Text>{element.descripcion}</Card.Text>
-//                                   <small className="text-muted">${element.precio}</small>
-//                                   <Card.Footer>
-//                                   <button type='button' className='comprar'>Comprar</button>
-//                                 </Card.Footer>
-//                                 </Card.Body>
-                
+
+
+ export function ResB(){
+ const {id}=useParams()
+    return(
+      <>
+      <CardGroup>
+      {Stock.map((element,index)=>{
+         if(id.toLowerCase()==element.marca.toLowerCase()){
+            return(
+               <GenerarCard index={index} imagen={element.imagen} marca={element.marca} descripcion={element.descripcion} item={element} price={element.price}/>
+            )
+         }
+
+      })}
+      </CardGroup>
+   </>
+   )
+} 
    
-//             </CardGroup>
-//           )
-
-//         }
-//       })
-//     return(
-//     <>
-
-//     </>
-//     )
-// }

@@ -1,61 +1,69 @@
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import React, { Component } from 'react'
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import { useState } from 'react'
-import { Stock } from '../data/data';
-
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import { useState } from "react";
+import { Stock } from "../data/data";
+import { Link } from "react-router-dom";
 
 
 function NavDropdownExample(props) {
-  
-  const [prod, setProd] = useState([])
+ 
   const [busqueda, setBusqueda] = useState("")
   const datos = e =>{
-      e.preventDefault()
-      
-      Stock.map((element)=>{
-        if(element.tipo==busqueda|| element.marca==busqueda){
-          const Search= element
-          setProd(Search)
-          console.log(Search)
-        }
-      })
+    e.preventDefault()
+
   }
   const cambiarState = e =>{
-      setBusqueda(e.target.value)
-      console.log(busqueda)
-     
-  }
-  function cambiarTipo(e){
-    props.setCategoria(e.target.textContent);
-   }
+    console.log(e.target.value);
+    setBusqueda(e.target.value);
+    
+}       
+  
+  
+  
+
+  
   return (
-    <div className='sNav'>
-    <Nav variant="pills"  >
-      <Nav.Item>
-        <Nav.Link  href="#/home" onClick={cambiarTipo}>
-          Vender
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link  title="Item" onClick={cambiarTipo}>
-          Ofertas
-        </Nav.Link>
-      </Nav.Item>
-      <NavDropdown title="Categorias" id="nav-dropdown">
-        <NavDropdown.Item onClick={cambiarTipo}>Remeras</NavDropdown.Item>
-        <NavDropdown.Item onClick={cambiarTipo} >Pantalones</NavDropdown.Item>
-        <NavDropdown.Item onClick={cambiarTipo} >Botas</NavDropdown.Item>
-      </NavDropdown>
-      <Form className="d-flex" onSubmit={datos} >
-          <Form.Control type="search" placeholder="Buscar..." className="me-2" aria-label="Search" onChange={cambiarState}/>
-          <Button variant="outline-success" type="submit"  >Buscar</Button>
-      </Form>
-    </Nav>
+    <div className="sNav">
+      <Nav variant="pills">
+        <Nav.Item>
+          <Link to="/Vender">
+            <Nav.Link href="/">Vender</Nav.Link>
+          </Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/Ofertas">
+            <Nav.Link href="/" title="Item">
+              Ofertas
+            </Nav.Link>
+          </Link>
+        </Nav.Item>
+        <NavDropdown title="Categorias" id="nav-dropdown">
+          <Link to="/Remeras">
+            <NavDropdown.Item href="/">Remeras</NavDropdown.Item>
+          </Link>
+          <Link to="/Pantalon">
+            <NavDropdown.Item href="/"> Pantalones </NavDropdown.Item>
+          </Link>
+          <Link to="/Botas">
+            <NavDropdown.Item href="/"> Botas</NavDropdown.Item>
+          </Link>
+        </NavDropdown>
+        <Form className="d-flex" onSubmit={datos} >
+          
+          <Form.Control  type="search"  placeholder="Buscar..."  className="me-2 buscador"  aria-label="Search" onChange={cambiarState}
+          />
+          {/* <Link to="/Buscador"> */}
+          <Link to={"/Buscador/"+busqueda}>
+          <Button variant="outline-success" type="submit">Buscar</Button>
+          </Link>
+          {/* </Link> */}
+        </Form>
+      </Nav>
     </div>
   );
 }
 
-export default NavDropdownExample
+export default NavDropdownExample;
