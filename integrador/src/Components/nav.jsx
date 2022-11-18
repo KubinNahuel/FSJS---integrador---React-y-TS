@@ -13,7 +13,6 @@ function NavDropdownExample(props) {
   const [busqueda, setBusqueda] = useState("")
   const datos = e =>{
     e.preventDefault()
-
   }
   const cambiarState = e =>{
     console.log(e.target.value);
