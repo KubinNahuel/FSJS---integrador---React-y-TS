@@ -24,9 +24,50 @@ body {
   .Carrusel{
     max-height: 520px !important;
   }
+  .nav-link{
+    background-color: transparent !important;
+  }
+
   .imagenCar{
     width: 1280px;
-    height: 720px;
+    height: auto;
+    min-height: 320px;
+    max-height: 620px;
+  }
+  .tablaCart{
+    height: 6rem;
+  }
+  .flexLogin{
+    display: flex;
+    justify-content: center;
+  }
+  .login{
+    text-align: center;
+    box-shadow: 2px 2px 7px ;
+    width: max-content;
+    background-color: antiquewhite;
+    padding: 30px;
+    margin-top: 30vh;
+    height: max-content;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .inputName{
+    margin: 10px;
+    padding: 10px;
+  }
+  .inputYears{
+    margin: 10px;
+    padding: 10px;
+  }
+  .botonLogin{
+    border: none;
+    background-color: rgb(13, 214, 13);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+  }
+  .imagenTabla{
+    height: 6rem;
   }
   .colorNav{
     background-color: yellow;
@@ -49,19 +90,19 @@ body {
     gap:40px;
     justify-content: center;
     .card-body{
-        background-color: white;
-        
-        width: 300px !important;
-        overflow: hidden;
-        height: max-content;
-        box-shadow: 2px 3px 8px ;
-        border-radius: 10px !important;
-        cursor: pointer;
+      background-color: white;
+      max-width: 300px !important;
+        min-width: 300px !important;
+      overflow: hidden;
+      height: max-content;
+      box-shadow: 2px 3px 8px;
+      border-radius: 10px !important;
+      cursor: pointer;
         .imagen-card{
-            height: 200px;
-            max-width: 500px !important;
-            text-align: center !important; 
-            box-shadow: 1px 1px 2px;
+          height: 200px;
+          max-width: 500px !important;
+          text-align: center !important;
+          box-shadow: 1px 1px 2px;
           }  
     
           .comprar{
@@ -76,9 +117,9 @@ body {
           }
 
           &:hover{
-            transition: width 0.5s;
+            transition: all 0.5s  !important;
             font-size: 20px !important;
-            width: 385px !important;
+            width: 400px !important;
           }
         }  
 
