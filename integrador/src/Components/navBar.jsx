@@ -33,7 +33,7 @@ function NavScrollExample() {
           </Nav>
           
         </Navbar.Collapse>
-        {user ? <><Navbar.Brand className="nombreL">{user.name} {user.years}</Navbar.Brand> <Link to="/"><Navbar.Brand href="/" onClick={cambiaLogin}>Salir</Navbar.Brand></Link> </>: <Link to="/Login"><Navbar.Brand href="/">Ingresar</Navbar.Brand></Link>}
+        {user ? <><Navbar.Brand className="nombreL">{user.name} {user.years}</Navbar.Brand> <Link to="/"><Navbar.Brand href="/" onClick={cambiaLogin}>Salir</Navbar.Brand></Link> </>:<> <Link to="/Login"><Navbar.Brand href="/">Ingresar</Navbar.Brand></Link> <Link to="/Register"><Navbar.Brand href="/">Registrarse</Navbar.Brand></Link></>}
           
         <Link to="/Carrito">Carrito</Link>
       </Container>

@@ -15,6 +15,7 @@ import { UserProvider } from "./context/userProvider";
 import { ResB } from "./Components/buscador";
 import { Cart } from "./Components/cart";
 import { CartProvider } from "react-use-cart";
+import { Register } from "./Components/register";
 
 
 
@@ -42,6 +43,8 @@ function App() {
               <Route path="/Login" element={<Login/>} />
                <Route path="/Buscador/:id" element={<ResB/>} /> 
               <Route path="/Carrito" element={<Cart/>} />
+              <Route path="/Register" element={<Register/>} />
+
             </Routes>
           </body>
           <footer>

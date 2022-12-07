@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 
@@ -41,10 +41,34 @@ const reducer = (state, action) => {
 
 function Vender() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(state);
-  };
+  const [stado, setStado] = useState({
+    type: '',
+    imagen: '',
+    descripcion: '',
+    price: '',
+    role:1
+  })
+  const handleChange = (e) =>{
+    setStado({
+        ...stado,
+        [e.target.name]:e.target.value
+    })
+    console.log(stado)
+    }
+  const handleSubmit =(e)=>{
+    e.preventDefault();
+    fetch('http://localhost:3030/api/post',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(stado)
+    }).then((res)=>{
+        res.json();
+    }).then((data)=>{
+        console.log(data);
+    }).catch((err)=>{
+        console.log(err);
+    })
+    }
   return (
     <div className="cardVenderContainer">
       <div className="cardVender">
@@ -58,40 +82,38 @@ function Vender() {
           <label htmlFor="">Seleccione imagen del producto </label>
           <input
             type="file"
-            name="adjunto"
+            name="imagen"
             accept=".jpg,.png"
-            value={state.imagen}
-            onChange={(event) =>
-              dispatch({ type: "CH_IMAGEN", value: event.target.value })
-            }
+            onChange={handleChange}
+            
           />
 
           <div className="cardVenderBody">
             <label htmlFor="">Ingrese nombre del producto</label>
             <input
               type="text"
-              name="producto"
-              value={state.nombre}
-              onChange={(event) =>
-                dispatch({ type: "CH_NOMBRE", value: event.target.value })
+              name="type"
+              
+              onChange={
+                handleChange
               }
             />
             <label htmlFor="">Ingrese descripcion del producto</label>
             <input
               type="text"
               name="descripcion"
-              value={state.descripcion}
-              onChange={(event) =>
-                dispatch({ type: "CH_DESCRIPCION", value: event.target.value })
+             
+              onChange={
+                 handleChange
               }
             />
             <label>Ingrese Precio del producto</label>
             <input
               type="number"
-              name="precio"
-              value={state.precio}
-              onChange={(event) =>
-                dispatch({ type: "CH_PRECIO", value: event.target.value })
+              name="price"
+              
+              onChange={
+                 handleChange
               }
             />
             <button type="submit">Mandar</button>

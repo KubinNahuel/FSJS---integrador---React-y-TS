@@ -7,6 +7,10 @@ import { useUserContext, useUserToggleContext } from "../context/userProvider";
 export const Login=()=>{
     const [nombre,setNombre]=useState("")
     const [edad,setEdad]=useState("")
+    const [state, setState]=useState({
+        email:'',
+        password:''
+    })
     
     const cambiarNombre=(nuevoNombre)=>{
         setNombre(nuevoNombre)
@@ -18,12 +22,26 @@ export const Login=()=>{
     
     const user= useUserContext()
     const cambiaLogin=useUserToggleContext()
-    const  handleSubmit=(event)=>{
-    event.preventDefault()
-        cambiaLogin(nombre,edad)
-        localStorage.setItem(user.name,user.years)
-        
-    }
+    const handleChange = (e) =>{
+        setState({
+            ...state,
+            [e.target.name]:e.target.value
+        })
+        }
+        const handleSubmit =(e)=>{
+        e.preventDefault();
+        fetch(`http://localhost:3030/api/user/login`,{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify(state)
+        }).then((res)=>{
+            res.json();
+        }).then((data)=>{
+            console.log(data);
+        }).catch((err)=>{
+            console.log(err);
+        })
+        }
     
 
     return(
@@ -32,17 +50,17 @@ export const Login=()=>{
         <div className="login">
             <h1>Ingresar</h1>
             <form className="formL" name="formulario" method="post" action="/send.php" enctype="multipart/form-data" onSubmit={handleSubmit}>
-                <div className="inputName">
-                <label htmlFor="">Nombre</label>
-                <br></br>
-                <input type="text"  onChange={e=>cambiarNombre(e.target.value)} placeholder="Pepito..."/>
-                </div>
                 <div className="inputYears">
-                <label htmlFor="">Edad</label>
+                <label htmlFor="">Correo Electronico</label>
                 <br></br>
-                <input type="number" onChange={e=>cambiarEdad(e.target.value)} placeholder="25..."/>
+                <input type="email" name="email" onChange={handleChange} placeholder="pepito@..." required/>
                 </div>
-                <button type="submit" className="botonLogin">Mandar</button>
+                <div className="inputName">
+                <label htmlFor="">Contraseña</label>
+                <br></br>
+                <input type="password" name="password" onChange={handleChange} placeholder="Password..." required/>
+                </div>
+                <button type="submit" className="botonLogin" onSubmit={handleSubmit}>Iniciar Se</button>
             </form>
         </div>
         </div>
